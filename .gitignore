@@ -1,0 +1,10 @@
+AGSQuest/_OpenInEditor.lock
+AGSQuest/_Debug/*
+AGSQuest/Compiled/*
+*.bak
+*.user
+*.dmp
+acsprset.spr
+backup_acsprset.spr
+sprindex.dat
+AGSQuest/AudioCache/*
