@@ -1,4 +1,4 @@
-# Adventure Game Studio Demo Game
+# "AGSQuest" Game Project Source
 
 A community made Demo Game for [Adventure Game Studio](http://www.adventuregamestudio.co.uk/).
 
