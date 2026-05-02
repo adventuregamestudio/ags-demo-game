@@ -49,9 +49,9 @@
       <HasMODMusic>False</HasMODMusic>
       <InventoryCursors>True</InventoryCursors>
       <InventoryHotspotMarkerCrosshairColor>0</InventoryHotspotMarkerCrosshairColor>
-      <InventoryHotspotMarkerDotColor>0</InventoryHotspotMarkerDotColor>
-      <InventoryHotspotMarkerSprite>0</InventoryHotspotMarkerSprite>
-      <InventoryHotspotMarkerStyle>None</InventoryHotspotMarkerStyle>
+      <InventoryHotspotMarkerDotColor>63488</InventoryHotspotMarkerDotColor>
+      <InventoryHotspotMarkerSprite>11</InventoryHotspotMarkerSprite>
+      <InventoryHotspotMarkerStyle>Sprite</InventoryHotspotMarkerStyle>
       <LeftToRightPrecedence>True</LeftToRightPrecedence>
       <LetterboxMode>False</LetterboxMode>
       <MaximumScore>0</MaximumScore>
@@ -1445,8 +1445,8 @@
           <InventoryItem>
             <CursorImage>4</CursorImage>
             <Description>Key</Description>
-            <HotspotX>18</HotspotX>
-            <HotspotY>15</HotspotY>
+            <HotspotX>0</HotspotX>
+            <HotspotY>5</HotspotY>
             <ID>1</ID>
             <Image>4</Image>
             <Name>iKey</Name>
@@ -1463,8 +1463,8 @@
           <InventoryItem>
             <CursorImage>5</CursorImage>
             <Description>Gem</Description>
-            <HotspotX>16</HotspotX>
-            <HotspotY>16</HotspotY>
+            <HotspotX>3</HotspotX>
+            <HotspotY>0</HotspotY>
             <ID>2</ID>
             <Image>5</Image>
             <Name>iGem</Name>
@@ -1481,8 +1481,8 @@
           <InventoryItem>
             <CursorImage>46</CursorImage>
             <Description xml:space="preserve">Hidden Gem</Description>
-            <HotspotX>15</HotspotX>
-            <HotspotY>15</HotspotY>
+            <HotspotX>3</HotspotX>
+            <HotspotY>0</HotspotY>
             <ID>3</ID>
             <Image>46</Image>
             <Name>iGem2</Name>
@@ -1499,8 +1499,8 @@
           <InventoryItem>
             <CursorImage>53</CursorImage>
             <Description xml:space="preserve">Blue Cup</Description>
-            <HotspotX>13</HotspotX>
-            <HotspotY>15</HotspotY>
+            <HotspotX>0</HotspotX>
+            <HotspotY>3</HotspotY>
             <ID>4</ID>
             <Image>53</Image>
             <Name>iBlueCup</Name>
@@ -3335,6 +3335,21 @@ stop
                   <OffsetY>0</OffsetY>
                   <ImportHeight>20</ImportHeight>
                   <ImportWidth>20</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="11" Width="11" Height="15" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Assets/Sprites/GUIs/CursorSmallPointer.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>15</ImportHeight>
+                  <ImportWidth>11</ImportWidth>
                   <ImportAsTile>False</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
