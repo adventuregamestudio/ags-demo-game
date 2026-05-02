@@ -1277,7 +1277,7 @@
                 <Left>17</Left>
                 <Locked>False</Locked>
                 <Name>LabelCredits</Name>
-                <Text xml:space="preserve">AGS QUEST is a demo game brought to you by the AGS developer community to showcase the basic features of ADVENTURE GAME STUDIO.[[This game is distributed as freeware and is not for sale or rent.[[CREDITS:[[ADVENTURE GAME STUDIO 3.6.0.58 by Chris Jones et al.[Original Roger sprites by ProgZmax (Shane Stevens), recolored by Hobo.[Mage paint-overs by Rootbound.[Background art by Rootbound.[Inventory item art by Danvzare.[Cursor icons by CaeserCub[APOLLO color palette by Adam C Younis.[Public Domain sounds by Freesound.org users egomassive, kyles, maodin204, and splicesound.</Text>
+                <Text xml:space="preserve">AGS QUEST is a demo game brought to you by the AGS developer community to showcase the basic features of ADVENTURE GAME STUDIO.[[This game is distributed as freeware and is not for sale or rent.[[CREDITS:[[ADVENTURE GAME STUDIO 3.6.0.60 by Chris Jones et al.[Original Roger sprites by ProgZmax (Shane Stevens), recolored by Hobo.[Mage paint-overs by Rootbound.[Background art by Rootbound.[Inventory item art by Danvzare.[Cursor icons by CaeserCub[APOLLO color palette by Adam C Younis.[Public Domain sounds by Freesound.org users egomassive, kyles, maodin204, and splicesound.</Text>
                 <TextAlignment>Left</TextAlignment>
                 <TextColor>14594</TextColor>
                 <Top>18</Top>
