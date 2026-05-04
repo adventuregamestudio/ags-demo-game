@@ -6,6 +6,7 @@ Copyright (c) 2024 "AGSQuest" Contributors.
 
 - Rootbound (initial version of the game)
 - Danvzare (additional art)
+- Kara Jo Kalinowski (fixes and improvements)
 
 ------------------------------------------------------
 
