@@ -6,7 +6,7 @@
       <AllowRelativeAssetResolutions>False</AllowRelativeAssetResolutions>
       <AlwaysDisplayTextAsSpeech>False</AlwaysDisplayTextAsSpeech>
       <AndroidAppVersionCode>1</AndroidAppVersionCode>
-      <AndroidAppVersionName>1.0.0.0</AndroidAppVersionName>
+      <AndroidAppVersionName>0.1.0.0</AndroidAppVersionName>
       <AndroidApplicationId>com.mystudio.mygame</AndroidApplicationId>
       <AndroidBuildFormat>ApkEmbedded</AndroidBuildFormat>
       <AntiAliasFonts>False</AntiAliasFonts>
@@ -26,7 +26,7 @@
       <DebugMode>True</DebugMode>
       <DefaultRoomMaskResolution>1</DefaultRoomMaskResolution>
       <Description xml:space="preserve">Demo showcasing basic features of AGS</Description>
-      <DeveloperName />
+      <DeveloperName xml:space="preserve">AGS Community</DeveloperName>
       <DeveloperURL>adventuregamestudio.co.uk</DeveloperURL>
       <DialogOptionsBackwards>False</DialogOptionsBackwards>
       <DialogOptionsBullet>0</DialogOptionsBullet>
@@ -60,7 +60,7 @@
       <OptimizeSpriteStorage>True</OptimizeSpriteStorage>
       <PixelPerfect>True</PixelPerfect>
       <PlaySoundOnScore>0</PlaySoundOnScore>
-      <ReleaseDate>2024-04-15</ReleaseDate>
+      <ReleaseDate>2026-07-03</ReleaseDate>
       <RenderAtScreenResolution>UserDefined</RenderAtScreenResolution>
       <RoomTransition>FadeOutAndIn</RoomTransition>
       <RunGameLoopsWhileDialogOptionsDisplayed>True</RunGameLoopsWhileDialogOptionsDisplayed>
@@ -86,7 +86,7 @@
       <UseLowResCoordinatesInScript>False</UseLowResCoordinatesInScript>
       <UseOldCustomDialogOptionsAPI>False</UseOldCustomDialogOptionsAPI>
       <UseOldKeyboardHandling>False</UseOldKeyboardHandling>
-      <Version>1.0.0.0</Version>
+      <Version>0.1.0.0</Version>
       <WalkInLookMode>False</WalkInLookMode>
       <WhenInterfaceDisabled>Unchanged</WhenInterfaceDisabled>
     </Settings>
