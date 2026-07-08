@@ -703,7 +703,7 @@
                 <ID>0</ID>
                 <Left>2</Left>
                 <Locked>False</Locked>
-                <Name>LabelSubtitle</Name>
+                <Name>lblSubtitle</Name>
                 <Text xml:space="preserve">EXPLORING[[[[[[[[A GAME ENGINE BY CHRIS JONES ET AL.</Text>
                 <TextAlignment>Center</TextAlignment>
                 <TextColor>65535</TextColor>
@@ -925,9 +925,9 @@
                 <Left>6</Left>
                 <Locked>False</Locked>
                 <MouseoverImage>60</MouseoverImage>
-                <Name>Button1</Name>
+                <Name>btnSave</Name>
                 <NewModeNumber>0</NewModeNumber>
-                <OnClick>Button1_OnClick</OnClick>
+                <OnClick>btnSave_OnClick</OnClick>
                 <PushedImage>59</PushedImage>
                 <Text>Save</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
@@ -949,9 +949,9 @@
                 <Left>6</Left>
                 <Locked>False</Locked>
                 <MouseoverImage>60</MouseoverImage>
-                <Name>Button2</Name>
+                <Name>btnLoad</Name>
                 <NewModeNumber>0</NewModeNumber>
-                <OnClick>Button2_OnClick</OnClick>
+                <OnClick>btnLoad_OnClick</OnClick>
                 <PushedImage>59</PushedImage>
                 <Text>Load</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
@@ -973,9 +973,9 @@
                 <Left>6</Left>
                 <Locked>False</Locked>
                 <MouseoverImage>60</MouseoverImage>
-                <Name>Button3</Name>
+                <Name>btnExit</Name>
                 <NewModeNumber>0</NewModeNumber>
-                <OnClick>Button3_OnClick</OnClick>
+                <OnClick>btnExit_OnClick</OnClick>
                 <PushedImage>59</PushedImage>
                 <Text>Exit</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
@@ -997,9 +997,9 @@
                 <Left>6</Left>
                 <Locked>False</Locked>
                 <MouseoverImage>60</MouseoverImage>
-                <Name>Button4</Name>
+                <Name>btnHelp</Name>
                 <NewModeNumber>0</NewModeNumber>
-                <OnClick>Button4_OnClick</OnClick>
+                <OnClick>btnHelp_OnClick</OnClick>
                 <PushedImage>59</PushedImage>
                 <Text>?</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
@@ -1103,7 +1103,7 @@
                 <ID>2</ID>
                 <Left>30</Left>
                 <Locked>False</Locked>
-                <Name>Label3</Name>
+                <Name>lblCloseProgram</Name>
                 <Text xml:space="preserve">CLOSE PROGRAM?</Text>
                 <TextAlignment>Left</TextAlignment>
                 <TextColor>14594</TextColor>
@@ -1146,8 +1146,8 @@
                 <Locked>False</Locked>
                 <MaxValue>100</MaxValue>
                 <MinValue>0</MinValue>
-                <Name>Slider1</Name>
-                <OnChange>Slider1_OnChange</OnChange>
+                <Name>sldVolume</Name>
+                <OnChange>sldVolume_OnChange</OnChange>
                 <Top>80</Top>
                 <Value>100</Value>
                 <Visible>True</Visible>
@@ -1162,7 +1162,7 @@
                 <ID>1</ID>
                 <Left>5</Left>
                 <Locked>False</Locked>
-                <Name>Label4</Name>
+                <Name>lblControls</Name>
                 <Text>CONTROLS</Text>
                 <TextAlignment>Center</TextAlignment>
                 <TextColor>14594</TextColor>
@@ -1179,7 +1179,7 @@
                 <ID>2</ID>
                 <Left>38</Left>
                 <Locked>False</Locked>
-                <Name>Label5</Name>
+                <Name>lblVolume</Name>
                 <Text>VOLUME</Text>
                 <TextAlignment>Left</TextAlignment>
                 <TextColor>14594</TextColor>
@@ -1196,7 +1196,7 @@
                 <ID>3</ID>
                 <Left>140</Left>
                 <Locked>False</Locked>
-                <Name>Label6</Name>
+                <Name>lblControlsLeftMouse</Name>
                 <Text xml:space="preserve">LEFT MOUSE BUTTON:[Look, Walk, Interact, Talk, Use Inventory</Text>
                 <TextAlignment>Left</TextAlignment>
                 <TextColor>14594</TextColor>
@@ -1213,7 +1213,7 @@
                 <ID>4</ID>
                 <Left>140</Left>
                 <Locked>False</Locked>
-                <Name>Label7</Name>
+                <Name>lblControlsSpace</Name>
                 <Text xml:space="preserve">SPACE BAR:[Skip character movement</Text>
                 <TextAlignment>Left</TextAlignment>
                 <TextColor>14594</TextColor>
@@ -1234,9 +1234,9 @@
                 <Left>129</Left>
                 <Locked>False</Locked>
                 <MouseoverImage>60</MouseoverImage>
-                <Name>Button5</Name>
+                <Name>btnOptionsBack</Name>
                 <NewModeNumber>0</NewModeNumber>
-                <OnClick>Button5_OnClick</OnClick>
+                <OnClick>btnOptionsBack_OnClick</OnClick>
                 <PushedImage>59</PushedImage>
                 <Text>BACK</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
@@ -1276,7 +1276,7 @@
                 <ID>0</ID>
                 <Left>17</Left>
                 <Locked>False</Locked>
-                <Name>LabelCredits</Name>
+                <Name>lblCredits</Name>
                 <Text xml:space="preserve">AGS QUEST is a demo game brought to you by the AGS developer community to showcase the basic features of ADVENTURE GAME STUDIO.[[This game is distributed as freeware and is not for sale or rent.[[CREDITS:[[ADVENTURE GAME STUDIO 3.6.0.60 by Chris Jones et al.[Original Roger sprites by ProgZmax (Shane Stevens), recolored by Hobo.[Mage paint-overs by Rootbound.[Background art by Rootbound.[Inventory item art by Danvzare.[Cursor icons by CaeserCub[APOLLO color palette by Adam C Younis.[Public Domain sounds by Freesound.org users egomassive, kyles, maodin204, and splicesound.</Text>
                 <TextAlignment>Left</TextAlignment>
                 <TextColor>14594</TextColor>
@@ -1297,9 +1297,9 @@
                 <Left>210</Left>
                 <Locked>False</Locked>
                 <MouseoverImage>60</MouseoverImage>
-                <Name>ButtonCloseCredits</Name>
+                <Name>btnCloseCredits</Name>
                 <NewModeNumber>0</NewModeNumber>
-                <OnClick>ButtonCloseCredits_OnClick</OnClick>
+                <OnClick>btnCloseCredits_OnClick</OnClick>
                 <PushedImage>59</PushedImage>
                 <Text>CLOSE</Text>
                 <TextAlignment>MiddleCenter</TextAlignment>
