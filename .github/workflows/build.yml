@@ -1,0 +1,97 @@
+name: CI
+
+on: [push, pull_request, workflow_dispatch]
+
+permissions:
+  contents: read
+
+env:
+  EDITOR_VERSION: 3.6.2
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          submodules: true
+          persist-credentials: false
+
+      - name: Gets ags-toolbox
+        run: |
+          curl -Lo atbx.exe https://github.com/ericoporto/agstoolbox/releases/download/0.6.4/atbx.exe
+          echo "${{github.workspace}}" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
+
+      - name: Install AGS
+        run: |
+          atbx install editor -q ${{ env.EDITOR_VERSION }}
+          
+      - name: Build AGSQuest
+        run: atbx build --timeout=300 --editor ${{ env.EDITOR_VERSION }} ./AGSQuest
+
+      - name: Upload artifacts of compiled game
+        uses: actions/upload-artifact@v7
+        with:
+          name: agsquest-game-binaries
+          path: |
+            AGSQuest/Compiled/*/*
+
+      - name: Remove built files, but keep spritefile
+        shell: bash
+        run: |
+          cd AGSQuest
+          mv acsprset.spr acsprset.spr.keep
+          git clean -fdX
+          mv acsprset.spr.keep acsprset.spr
+
+      - name: Copy licenses to project directory
+        shell: bash
+        run: |
+          mkdir AGSQuest/Docs
+          cp COPYRIGHT.md            AGSQuest/Docs/COPYRIGHT.md
+          cp LICENSE.md              AGSQuest/Docs/LICENSE.md
+          cp LICENSE_0BSD.md         AGSQuest/Docs/LICENSE_0BSD.md
+          cp LICENSE_CC4-BY-NC-ND.md AGSQuest/Docs/LICENSE_CC4-BY-NC-ND.md
+
+      - name: Zip project
+        run: |
+          powershell Compress-Archive -Path AGSQuest/* -DestinationPath AGSQuest.zip
+
+      - name: Upload release zip artifact
+        uses: actions/upload-artifact@v7
+        with:
+          # name: because archive is false, the name is the filename
+          if-no-files-found: error
+          archive: false
+          path: AGSQuest.zip
+
+  release:
+    needs: build-windows
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/v')
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+
+      - name: Download AGSQuest zip
+        uses: actions/download-artifact@v8
+        with:
+          name: AGSQuest.zip
+          skip-decompress: true
+          path: .
+
+      - name: Create release and upload assets
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN  }}
+          REF_NAME: ${{ github.ref_name }}
+        run: |
+          gh release create "${REF_NAME}" --verify-tag || true
+          gh release upload "${REF_NAME}" ./AGSQuest.zip --clobber
+
