@@ -903,7 +903,7 @@
               <ID>4</ID>
               <Left>586</Left>
               <Name>gInGameMenu</Name>
-              <OnClick>gInGameMenu_OnClick</OnClick>
+              <OnClick />
               <PopupStyle>Normal</PopupStyle>
               <PopupYPos>0</PopupYPos>
               <Top>10</Top>
