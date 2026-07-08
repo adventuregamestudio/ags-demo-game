@@ -1135,11 +1135,11 @@
             </NormalGUI>
             <Controls>
               <GUISlider>
-                <BackgroundImage>0</BackgroundImage>
+                <BackgroundImage>13</BackgroundImage>
                 <Clickable>True</Clickable>
                 <Enabled>True</Enabled>
-                <HandleImage>0</HandleImage>
-                <HandleOffset>0</HandleOffset>
+                <HandleImage>12</HandleImage>
+                <HandleOffset>-1</HandleOffset>
                 <Height>17</Height>
                 <ID>0</ID>
                 <Left>24</Left>
@@ -3350,6 +3350,36 @@ stop
                   <OffsetY>0</OffsetY>
                   <ImportHeight>15</ImportHeight>
                   <ImportWidth>11</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="12" Width="9" Height="19" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Assets/Sprites/GUIs/SliderHandle.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>19</ImportHeight>
+                  <ImportWidth>9</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
+              <Sprite Slot="13" Width="69" Height="12" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Assets/Sprites/GUIs/SliderBackground.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>12</ImportHeight>
+                  <ImportWidth>69</ImportWidth>
                   <ImportAsTile>False</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
